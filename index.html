@@ -1,93 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="image/avatar.jpg" width="200" alt="avatar" />
-    <h1>Aisen Evseev</h1>
-    <p>
-      Я Евсеев Айсен Семенович ученик
-      <strong><em>Result-university</em></strong>
-    </p>
-    <h4>Список социальных сетей</h4>
-    <a href="https://vk.com/" target="_blank">VK</a>
-    |
-    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-    |
-    <a href="https://www.twitch.tv/" target="_blank">Twitch</a>
+    <div class="container">
+      <div class="info">
+        <img src="image/avatar.jpg" alt="avatar" class="avatar" />
 
-    <h2>Список моих Хобби</h2>
-    <ol>
-      <li>кормить кошку</li>
-      <li>ходить по горам</li>
-      <li>играть в компьютерные игры</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>МСЗ</td>
-          <td>Машинист насосных установок</td>
-          <td>2021-2022</td>
-        </tr>
-        <tr>
-          <td>Аптека IPharmasy</td>
-          <td>IT-специалист</td>
-          <td>2022-2023</td>
-        </tr>
-        <tr>
-          <td>школа 21</td>
-          <td>Ученик</td>
-          <td>2024-по н.вр.</td>
-        </tr>
-        <tr>
-          <td>ООО "ОШЕР"</td>
-          <td>Стажер фронтенд разработки</td>
-          <td>2025-по н.вр.</td>
-        </tr>
-        <tr>
-          <td>Result-university</td>
-          <td>Ученик</td>
-          <td>2025-по н.вр.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя" />
-      </div>
-      <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email" />
-      </div>
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea
-          id="message"
-          cols="20"
-          rows="5"
-          placeholder="Введите сообщение..."
-        ></textarea>
+        <div class="info-text">
+          <h1>Aisen Evseev</h1>
+          <p>
+            Я Евсеев Айсен Семенович ученик
+            <strong><em>Result-university</em></strong>
+          </p>
+          <h4>Список социальных сетей</h4>
+          <a href="https://vk.com/" target="_blank">VK</a>
+          |
+          <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+          |
+          <a href="https://www.twitch.tv/" target="_blank">Twitch</a>
+        </div>
       </div>
 
-      <input type="submit" value="Отправить!" />
-    </form>
+      <div class="card bg-green">
+        <h2>Список моих Хобби</h2>
+        <ol class="list">
+          <li>кормить кошку</li>
+          <li>ходить по горам</li>
+          <li>играть в компьютерные игры</li>
+        </ol>
+      </div>
+
+      <div class="card bg-red">
+        <h2>Опыт работы</h2>
+
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>МСЗ</td>
+              <td>Машинист насосных установок</td>
+              <td>2021-2022</td>
+            </tr>
+            <tr>
+              <td>Аптека IPharmasy</td>
+              <td>IT-специалист</td>
+              <td>2022-2023</td>
+            </tr>
+            <tr>
+              <td>школа 21</td>
+              <td>Ученик</td>
+              <td>2024-по н.вр.</td>
+            </tr>
+            <tr>
+              <td>ООО "ОШЕР"</td>
+              <td>Стажер фронтенд разработки</td>
+              <td>2025-по н.вр.</td>
+            </tr>
+            <tr>
+              <td>Result-university</td>
+              <td>Ученик</td>
+              <td>2025-по н.вр.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>Мои что-то</h2>
+        <ul class="link-list">
+          <li>
+            <a href="#">Ссылка 1</a>
+          </li>
+          <li>
+            <a href="#">Ссылка 2</a>
+          </li>
+        </ul>
+      </div>
+
+      <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea
+            id="message"
+            cols="20"
+            rows="5"
+            placeholder="Введите сообщение..."
+          ></textarea>
+        </div>
+
+        <input class="btn" type="submit" value="Отправить!" />
+      </form>
+    </div>
   </body>
 </html>
